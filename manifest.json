@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name" : "AEDE blocker",
+  "version" : "0.5",
+  "description" : "Bloquea las paginas de aquellos medios asociados a AEDE",
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "background" :
+  {
+    "scripts": ["check_aede.js"]
+  },
+  "web_accessible_resources": [
+    "blocked_url.html"
+  ]
+}
