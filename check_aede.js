@@ -1,6 +1,6 @@
-var arrayUrls = [ "*://*.elpais.es/*", "*://*.marca.com/*", "*://*.elmundo.es/*",
-		"*://*.as.com/*", "*://*.lavanguardia.com/*", "*://*.abc.es/*",
-		"*://*.elperiodico.com/*", "*://*.larazon.es/*",
+var arrayUrls = [ "*://*.elpais.com/*", "*://*.marca.com/*",
+		"*://*.elmundo.es/*", "*://*.as.com/*", "*://*.lavanguardia.com/*",
+		"*://*.abc.es/*", "*://*.elperiodico.com/*", "*://*.larazon.es/*",
 		"*://*.elcorreo.com/*", "*://*.lavozdegalicia.es/*",
 		"*://*.mundodeportivo.com/*", "*://*.sport.es/*",
 		"*://*.diariovasco.com/*", "*://*.lne.es/*", "*://*.farodevigo.es/*",
@@ -38,7 +38,7 @@ var arrayUrls = [ "*://*.elpais.es/*", "*://*.marca.com/*", "*://*.elmundo.es/*"
 		"*://*.elcorreoweb.es/*", "*://*.diariojaen.es/*",
 		"*://*.diarideterrassa.es/*", "*://*.eladelantado.com/*" ];
 
-chrome.webRequest.onBeforeRequest.addListener(function(info) {
+chrome.webRequest.onBeforeRequest.addListener(function(details) {
 	return {
 		redirectUrl : chrome.extension.getURL("blocked_url.html")
 	};
