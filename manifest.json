@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name" : "AEDE blocker",
-  "version" : "1.0.3",
+  "version" : "1.0.4",
   "description" : "Bloquea las paginas de aquellos medios asociados a AEDE",
   "permissions": [
     "webRequest",
