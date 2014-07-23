@@ -39,7 +39,7 @@ var arrayUrls = [ "*://*.elpais.es/*", "*://*.marca.com/*",
 				"*://*.lavozdealmeria.es/*", "*://*.diariodelaltoaragon.es/*", 
 				"*://*.elcorreoweb.es/*", "*://*.diariojaen.es/*", 
 				"*://*.diarideterrassa.es/*", "*://*.elperiodico.cat/*", 
-				"*://*.eladelantado.com/*" ];
+				"*://*.eladelantado.com/*", "*://*.elpais.com/*" ];
 
 chrome.webRequest.onBeforeRequest.addListener(function(details) {
 	return {
