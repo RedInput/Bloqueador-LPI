@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
-  "name" : "AEDE blocker",
-  "version" : "1.1",
-  "description" : "Bloquea las paginas de aquellos medios asociados a AEDE",
+  "name" : "Bloqueador Ley Propiedad Intelectual",
+  "short_name": "Bloqueador LPI",
+  "version" : "2.0",
+  "description" : "Bloquea las paginas de aquellos medios que apoyan la Ley de Propiedad Intelectual",
   "permissions": [
     "webRequest",
     "webRequestBlocking",
@@ -10,7 +11,7 @@
     "storage"
   ],
   "icons":
-  { 
+  {
     "48": "icon48.png",
     "128": "icon128.png"
   },
