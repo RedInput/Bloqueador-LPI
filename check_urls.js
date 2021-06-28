@@ -9,14 +9,14 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
             localStorage.removeItem("time");
             localStorage.setItem("url", details.url);
             return {
-                redirectUrl : chrome.extension.getURL("blocked_url.html")
+                redirectUrl : chrome.runtime.getURL("blocked_url.html")
             };
 
         } else if (white_list.indexOf(details.url)<0) {
             localStorage.removeItem("time");
             localStorage.setItem("url", details.url);
             return {
-                redirectUrl : chrome.extension.getURL("blocked_url.html")
+                redirectUrl : chrome.runtime.getURL("blocked_url.html")
             };
         }
     }
